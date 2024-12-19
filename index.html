@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Loại Gia Súc/Gia Cầm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .button {
+            background-color: #61aff4;
+            color: white;
+            padding: 15px 32px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #5a6268;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">Chọn Nhóm Ảnh</h1>
+    <button class="button" onclick="selectAnimal('Gia Cầm')">Gia Cầm</button>
+    <button class="button" onclick="selectAnimal('Gia Súc')">Gia Súc</button>
+    
+    <div id="result" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+    function selectAnimal(animalType) {
+        
+        // Chuyển hướng đến các trang khác
+        if (animalType === 'Gia Cầm') {
+            // Chuyển hướng tới trang Gia Cầm
+            window.location.href = "GC.html";  // Thay "giamcung.html" bằng đường dẫn bạn muốn
+        } else if (animalType === 'Gia Súc') {
+            // Chuyển hướng tới trang Gia Súc
+            window.location.href = "GS.html";  // Thay "giasuc.html" bằng đường dẫn bạn muốn
+        }
+    }
+</script>
+
+</body>
+</html>

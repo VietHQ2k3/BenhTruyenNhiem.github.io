@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GS.css">
+    <title>Hìn</title>
+</head>
+<body>
+    <button onclick="shuffleImages()" class="STA">Xáo trộn ảnh</button>
+    <div class="container">
+        <button class="button prev" onclick="showPrevious()">&#8249;</button>
+        <div class="image-container">
+            <img id="image" src="Gia súc/DDL1.png" alt="Ảnh">
+        </div>
+        <button class="button next" onclick="showNext()">&#8250;</button>
+    </div>
+    <div class="answers" id="answers">
+        <!-- Các đáp án sẽ được tạo động bởi JavaScript -->
+    </div>
+    <div id="feedback"></div>
+    
+    <script src="GS.js"></script>
+</body>
+</html>

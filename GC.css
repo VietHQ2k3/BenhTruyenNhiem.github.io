@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+#image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.button:hover {
+    background-color: #5a6268;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.answer {
+    background-color: #61aff4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.answer:hover {
+    background-color: #5a6268;
+}
+
+/* Đảm bảo số thứ tự nằm dưới bức ảnh */
+#image-wrapper {
+    position: relative;
+}
+
+.image-number {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+
+/* CSS cho nút "Xáo trộn ảnh" */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #61aff4; /* Màu xanh lá */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Khi người dùng di chuột qua nút */
+button:hover {
+    background-color: #5a6268; /* Màu xanh đậm hơn */
+    transform: scale(1.1); /* Làm nút phóng to khi hover */
+}
+
+/* Khi người dùng nhấn nút */
+button:active {
+    background-color: #61aff4; /* Màu xanh đậm hơn khi nhấn */
+    transform: scale(1); /* Trở lại kích thước ban đầu */
+}
+
+/* Thêm một khoảng cách giữa nút và các phần tử khác */
+button + .container {
+    margin-top: 20px;
+}
